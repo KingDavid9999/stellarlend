@@ -49,6 +49,7 @@ export interface CacheConfig {
   idempotencyTtlMs: number;
   idempotencyMaxEntries: number;
   protocolStatsTtlMs: number;
+  assetMetadataTtlMs: number;
   positionTtlMs: number;
   poolTtlMs: number;
   simulationTtlMs: number;

@@ -146,6 +146,7 @@ function buildConfig(): AppConfig {
         process.env.PROTOCOL_STATS_TTL_MS || '30000',
         10
       ),
+      assetMetadataTtlMs: parseInt(process.env.ASSET_METADATA_TTL_MS || '300000', 10),
       positionTtlMs: parseInt(process.env.POSITION_CACHE_TTL_MS || '15000', 10),
       poolTtlMs: parseInt(process.env.POOL_CACHE_TTL_MS || '30000', 10),
       simulationTtlMs: parseInt(process.env.SIMULATION_CACHE_TTL_MS || '10000', 10),
